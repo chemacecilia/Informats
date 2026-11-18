@@ -1,0 +1,104 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  padding-bottom: 24px;
+}
+
+.thumbnailWrapper {
+  width: 100%;
+  max-width: 392px;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #e5e7eb;
+  position: relative;
+}
+
+.thumbnailWrapperLarge {
+  height: 228px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.cardContainer:hover .thumbnail {
+  transform: scale(1.02);
+}
+
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tagBadge {
+  background-color: var(--color-bubble-green);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-primary-green);
+  line-height: 1.2;
+}
+
+.newsTitle {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.2;
+  color: var(--color-text-dark);
+  text-align: left;
+}
+
+.newsTitleLarge {
+  font-size: 29px;
+}
+
+.leerAccion {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 48px;
+  padding: 8px 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.leerTexto {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--color-primary-green);
+  white-space: nowrap;
+}
+
+.arrowRightIcon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.leerAccion:hover .arrowRightIcon {
+  transform: translateX(4px);
+}
+
+.leerAccion:hover .leerTexto {
+  text-decoration: underline;
+}
+
+.cardSeparator {
+  height: 1px;
+  background-color: var(--color-border);
+  width: 100%;
+  margin-top: 10px;
+}

@@ -1,0 +1,103 @@
+.footerContainer {
+  background-color: var(--color-bg-footer);
+  padding: 28px 24px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.incibeTitle {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 36px;
+  color: var(--color-primary-green);
+}
+
+.incibeSubtitle {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--color-text-dark);
+}
+
+.helpQuestion {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  color: var(--color-primary-green);
+  margin-top: 4px;
+}
+
+.helpDescription {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--color-text-dark);
+}
+
+.callButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 60px;
+  background-color: var(--color-white);
+  border: 1.5px solid var(--color-primary-green);
+  border-radius: var(--radius-btn);
+  padding: 14px 18px;
+  color: var(--color-primary-green);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 21px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+  margin: 8px 0;
+}
+
+.callButton:hover {
+  background-color: #f7faf7;
+  border-color: var(--color-primary-hover);
+}
+
+.callButton:active {
+  transform: scale(0.98);
+}
+
+.phoneIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.serviceInfo {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--color-text-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.moreInfoLink {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--color-primary-green);
+  text-decoration: underline;
+  margin-top: 4px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.moreInfoLink:hover {
+  color: var(--color-primary-hover);
+}

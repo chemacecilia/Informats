@@ -1,0 +1,166 @@
+.searchWrapper {
+  background-color: var(--color-bg-app);
+  padding: 16px 24px 12px;
+  width: 100%;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.globoConsulta {
+  background-color: var(--color-bubble-green);
+  border-radius: 18px 18px 18px 4px;
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.globoTitulo {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--color-primary-green);
+  text-align: left;
+}
+
+.inputCard {
+  background-color: var(--color-white);
+  border: 1.5px solid var(--color-primary-green);
+  border-radius: var(--radius-btn);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 60px;
+  padding: 8px 16px;
+  width: 100%;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.inputCard:focus-within {
+  box-shadow: 0 0 0 3px rgba(24, 86, 65, 0.25);
+}
+
+.searchIcon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 21px;
+  color: var(--color-primary-green);
+  outline: none;
+  min-width: 0;
+}
+
+.searchInput::placeholder {
+  color: rgba(24, 86, 65, 0.7);
+  opacity: 1;
+}
+
+.iconBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: var(--color-primary-green);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.iconBtn:hover {
+  background-color: rgba(24, 86, 65, 0.1);
+}
+
+.iconBtn:active {
+  transform: scale(0.95);
+}
+
+.micIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.clearBtn {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--color-text-muted);
+}
+
+.listeningActive {
+  background-color: #fee2e2;
+  border-color: #dc2626;
+  animation: pulseMic 1.5s infinite;
+}
+
+@keyframes pulseMic {
+  0% {
+    box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(220, 38, 38, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(220, 38, 38, 0);
+  }
+}
+
+.listeningFeedback {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  color: #991b1b;
+}
+
+.speechErrorAlert {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background-color: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #92400e;
+  line-height: 1.3;
+}
+
+.activeSearchBadge {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  color: var(--color-text-muted);
+}
+
+.homeIndicatorZone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.homeIndicator {
+  width: 138px;
+  height: 5px;
+  background-color: #202e29;
+  border-radius: 3px;
+  opacity: 0.8;
+}

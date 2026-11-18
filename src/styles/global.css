@@ -1,0 +1,108 @@
+:root {
+  --color-bg-app: #fbf9f4;
+  --color-bg-header: #f6f4ef;
+  --color-bg-footer: #f0ede5;
+  --color-primary-green: #185641;
+  --color-primary-hover: #124231;
+  --color-bubble-green: #eaf0e8;
+  --color-tag-inactive-bg: #eeeeea;
+  --color-tag-inactive-border: #c9d1c7;
+  --color-tag-active-bg: #185641;
+  --color-tag-active-text: #ffffff;
+  --color-text-dark: #202e29;
+  --color-text-muted: #536159;
+  --color-border: #c9d1c7;
+  --color-white: #ffffff;
+
+  --font-logo: 'Odor Mean Chey', Georgia, 'Times New Roman', serif;
+  --font-heading: 'Lora', Georgia, 'Times New Roman', serif;
+  --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --radius-card: 12px;
+  --radius-pill: 18px;
+  --radius-bubble: 18px;
+  --radius-btn: 12px;
+
+  --scale-font: 1;
+}
+
+/* Modo tamaño de letra */
+body.letra-mediana {
+  --scale-font: 0.9;
+}
+
+body.letra-grande {
+  --scale-font: 1;
+}
+
+body.letra-muy-grande {
+  --scale-font: 1.15;
+}
+
+/* Modo Alto Contraste */
+body.alto-contraste {
+  --color-bg-app: #ffffff;
+  --color-bg-header: #ffffff;
+  --color-bg-footer: #f0f0f0;
+  --color-primary-green: #0b3d2b;
+  --color-primary-hover: #052619;
+  --color-bubble-green: #d5e5d3;
+  --color-tag-inactive-bg: #e2e2e2;
+  --color-tag-inactive-border: #000000;
+  --color-tag-active-bg: #000000;
+  --color-tag-active-text: #ffffff;
+  --color-text-dark: #000000;
+  --color-text-muted: #222222;
+  --color-border: #000000;
+}
+
+/* Reseteo básico y configuración */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--color-bg-app);
+  color: var(--color-text-dark);
+  font-family: var(--font-body);
+  font-size: calc(16px * var(--scale-font));
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Accesibilidad y foco */
+:focus-visible {
+  outline: 3px solid var(--color-primary-green);
+  outline-offset: 3px;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

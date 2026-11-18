@@ -1,0 +1,116 @@
+.headerContainer {
+  background-color: var(--color-bg-header);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  width: 100%;
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px 14px;
+  width: 100%;
+}
+
+.logoButton {
+  font-family: var(--font-logo);
+  font-size: 44px;
+  color: var(--color-primary-green);
+  line-height: 1;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  letter-spacing: -0.5px;
+}
+
+.logoButton:hover {
+  opacity: 0.9;
+}
+
+.actionsGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.headerActionBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-height: 54px;
+  min-width: 58px;
+  padding: 6px 8px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: var(--color-primary-green);
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.headerActionBtn:hover {
+  background-color: rgba(24, 86, 65, 0.08);
+}
+
+.actionIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.actionLabel {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.1;
+  color: var(--color-primary-green);
+  white-space: nowrap;
+}
+
+.separator {
+  height: 1px;
+  background-color: var(--color-border);
+  width: 100%;
+}
+
+.volverRow {
+  display: flex;
+  align-items: center;
+  padding: 8px 24px;
+  min-height: 52px;
+  background-color: var(--color-bg-header);
+}
+
+.volverButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  margin-left: -12px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: var(--color-primary-green);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.volverButton:hover {
+  background-color: rgba(24, 86, 65, 0.08);
+}
+
+.volverIcon {
+  width: 22px;
+  height: 22px;
+}

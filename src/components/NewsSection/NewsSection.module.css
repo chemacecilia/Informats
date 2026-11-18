@@ -1,0 +1,46 @@
+.sectionWrapper {
+  padding: 24px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.introBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.mainTitle {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 1.17;
+  color: var(--color-text-dark);
+}
+
+.subtitle {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.4;
+  color: var(--color-text-dark);
+}
+
+.cardsList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.footerNote {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--color-text-muted);
+  text-align: left;
+  margin-top: 8px;
+}

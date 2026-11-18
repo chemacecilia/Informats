@@ -1,0 +1,51 @@
+.likeButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 6px;
+  margin-left: -6px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+  font-family: var(--font-body);
+  font-size: 18px;
+  color: var(--color-text-muted);
+}
+
+.likeButton:hover {
+  background-color: rgba(24, 86, 65, 0.06);
+}
+
+.likeButton:active {
+  transform: scale(0.96);
+}
+
+.heartIcon {
+  width: 21px;
+  height: 18px;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.heartActive {
+  transform: scale(1.15);
+}
+
+.likeCount {
+  font-weight: 400;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+.likeLabel {
+  font-weight: 400;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+.isLiked .likeCount,
+.isLiked .likeLabel {
+  color: var(--color-primary-green);
+  font-weight: 600;
+}
